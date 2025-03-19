@@ -40,40 +40,52 @@
             align-items: center;
         }
 
-        .info-row {
-            display: flex;
+        .services-section {
             width: 100%;
-            justify-content: space-between;
+            display: flex;
+            flex-direction: column;
             margin-bottom: 20px;
         }
 
-        .side-text {
+        .service-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .service-item {
             width: 48%;
-            font-size: 16px;
-            font-weight: bold;
-            color: #b8860b;
-            text-align: center;
-            padding: 15px 10px;
             background-color: rgba(255, 248, 220, 0.9);
             border-radius: 12px;
+            padding: 15px 10px;
+            margin-bottom: 10px;
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-            line-height: 1.4;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
         }
 
-        .side-text img {
-            width: 60px;
-            height: 60px;
-            margin-bottom: 10px;
+        .service-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .service-icon {
+            width: 40px;
+            height: 40px;
+            margin-right: 8px;
             object-fit: contain;
         }
 
-        .side-text .emoji {
-            font-size: 24px;
-            margin-bottom: 5px;
+        .service-text {
+            font-size: 14px;
+            font-weight: bold;
+            color: #b8860b;
+            text-align: center;
+            line-height: 1.3;
         }
 
         .links-section {
@@ -140,18 +152,18 @@
                 padding: 25px;
             }
 
-            .side-text {
-                font-size: 20px;
+            .service-item {
                 padding: 20px 15px;
             }
 
-            .side-text img {
-                width: 80px;
-                height: 80px;
+            .service-icon {
+                width: 50px;
+                height: 50px;
+                margin-right: 12px;
             }
 
-            .side-text .emoji {
-                font-size: 30px;
+            .service-text {
+                font-size: 18px;
             }
 
             .link-box {
@@ -179,18 +191,31 @@
         @media (min-width: 1024px) {
             .container {
                 max-width: 1200px;
+            }
+
+            .services-section {
                 flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: space-between;
             }
 
-            .info-row {
+            .service-row {
                 width: 100%;
-                margin-bottom: 30px;
             }
 
-            .side-text {
-                width: 48%;
+            .service-item {
+                width: 23%;
+                padding: 20px 15px;
+            }
+
+            .service-icon {
+                width: 60px;
+                height: 60px;
+            }
+
+            .service-text {
+                font-size: 20px;
+                margin-top: 10px;
             }
 
             .links-section {
@@ -210,19 +235,41 @@
     <header>Gold and Diamond USA</header>
 
     <div class="container">
-        <div class="info-row">
-            <!-- LEFT SIDE -->
-            <div class="side-text">
-                <img src="https://img.icons8.com/fluency/96/jewelry.png" alt="Jewelry Repair">
-                <div class="emoji">💎</div>
-                <div>We Repair All<br>Jewelry & Phones</div>
+        <div class="services-section">
+            <div class="service-row">
+                <!-- Jewelry Repair -->
+                <div class="service-item">
+                    <div class="service-content">
+                        <img src="https://img.icons8.com/color/96/jewelry-repair.png" alt="Jewelry Repair" class="service-icon">
+                        <div class="service-text">We Repair Jewelry</div>
+                    </div>
+                </div>
+
+                <!-- Phone Repair -->
+                <div class="service-item">
+                    <div class="service-content">
+                        <img src="https://img.icons8.com/color/96/phone-repair.png" alt="Phone Repair" class="service-icon">
+                        <div class="service-text">We Repair Phones</div>
+                    </div>
+                </div>
             </div>
 
-            <!-- RIGHT SIDE -->
-            <div class="side-text">
-                <img src="https://img.icons8.com/color/96/gold-bars.png" alt="Custom Jewelry">
-                <div class="emoji">💰</div>
-                <div>We Make Custom Jewelry<br>& We Buy Gold</div>
+            <div class="service-row">
+                <!-- Custom Jewelry -->
+                <div class="service-item">
+                    <div class="service-content">
+                        <img src="https://img.icons8.com/color/96/jewelry-designer.png" alt="Custom Jewelry" class="service-icon">
+                        <div class="service-text">We Make Custom Jewelry</div>
+                    </div>
+                </div>
+
+                <!-- Buy Gold -->
+                <div class="service-item">
+                    <div class="service-content">
+                        <img src="https://img.icons8.com/color/96/gold-bars.png" alt="Buy Gold" class="service-icon">
+                        <div class="service-text">We Buy Gold</div>
+                    </div>
+                </div>
             </div>
         </div>
 
