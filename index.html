@@ -43,29 +43,23 @@
         .services-section {
             width: 100%;
             display: flex;
-            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
             margin-bottom: 20px;
         }
 
-        .service-row {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            margin-bottom: 10px;
-        }
-
         .service-item {
-            width: 48%;
+            width: 47%;
             background-color: rgba(255, 248, 220, 0.9);
             border-radius: 12px;
             padding: 15px 5px;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            min-height: 100px; /* Fixed height for mobile */
+            min-height: 140px;
         }
 
         .service-content {
@@ -74,17 +68,18 @@
             align-items: center;
             justify-content: center;
             width: 100%;
+            height: 100%;
         }
 
         .service-icon {
-            width: 50px;
-            height: 50px;
-            margin-bottom: 10px;
+            width: 60px;
+            height: 60px;
+            margin-bottom: 12px;
             object-fit: contain;
         }
 
         .service-text {
-            font-size: 14px;
+            font-size: 16px;
             font-weight: bold;
             color: #b8860b;
             text-align: center;
@@ -157,24 +152,19 @@
             }
 
             .service-item {
+                width: 48%;
                 padding: 20px 15px;
-                min-height: 120px;
-            }
-
-            .service-content {
-                flex-direction: row;
-                align-items: center;
+                min-height: 150px;
             }
 
             .service-icon {
-                width: 50px;
-                height: 50px;
-                margin-right: 12px;
-                margin-bottom: 0;
+                width: 70px;
+                height: 70px;
             }
 
             .service-text {
                 font-size: 18px;
+                margin-top: 10px;
             }
 
             .link-box {
@@ -210,30 +200,20 @@
                 justify-content: space-between;
             }
 
-            .service-row {
-                width: 100%;
-            }
-
             .service-item {
                 width: 23%;
                 padding: 20px 15px;
-                min-height: 150px;
-            }
-
-            .service-content {
-                flex-direction: column;
+                min-height: 180px;
             }
 
             .service-icon {
-                width: 60px;
-                height: 60px;
-                margin-right: 0;
-                margin-bottom: 10px;
+                width: 80px;
+                height: 80px;
+                margin-bottom: 15px;
             }
 
             .service-text {
                 font-size: 20px;
-                margin-top: 10px;
             }
 
             .links-section {
@@ -254,39 +234,35 @@
 
     <div class="container">
         <div class="services-section">
-            <div class="service-row">
-                <!-- Jewelry Repair -->
-                <div class="service-item">
-                    <div class="service-content">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBabwBYbpZ42ylvAc_Oy-LqaoIKnCyY9OpanNVvJkT__DKP-HUbQIc51XeX7VQxzkd5YQ&usqp=CAU" class="service-icon" alt="Jewelry Repair">
-                        <div class="service-text">We Repair Jewelry</div>
-                    </div>
-                </div>
-
-                <!-- Phone Repair -->
-                <div class="service-item">
-                    <div class="service-content">
-                        <img src="https://img.icons8.com/?size=100&id=kVFDgQ4EdepW&format=png&color=000000" alt="Phone Repair" class="service-icon">
-                        <div class="service-text">We Repair Phones</div>
-                    </div>
+            <!-- Jewelry Repair -->
+            <div class="service-item">
+                <div class="service-content">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBabwBYbpZ42ylvAc_Oy-LqaoIKnCyY9OpanNVvJkT__DKP-HUbQIc51XeX7VQxzkd5YQ&usqp=CAU" class="service-icon" alt="Jewelry Repair">
+                    <div class="service-text">We Repair Jewelry</div>
                 </div>
             </div>
 
-            <div class="service-row">
-                <!-- Custom Jewelry -->
-                <div class="service-item">
-                    <div class="service-content">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDYQY_huUzbOK5ugCB0lwagXYzkhSFBolz4v3k1QKcGYIM8ZkvL044w-mskuoAqc2zuz8&usqp=CAU" alt="Custom Jewelry" class="service-icon">
-                        <div class="service-text">We Make Custom Jewelry</div>
-                    </div>
+            <!-- Phone Repair -->
+            <div class="service-item">
+                <div class="service-content">
+                    <img src="https://img.icons8.com/?size=100&id=kVFDgQ4EdepW&format=png&color=000000" alt="Phone Repair" class="service-icon">
+                    <div class="service-text">We Repair Phones</div>
                 </div>
+            </div>
 
-                <!-- Buy Gold -->
-                <div class="service-item">
-                    <div class="service-content">
-                        <img src="https://img.icons8.com/color/96/gold-bars.png" alt="Buy Gold" class="service-icon">
-                        <div class="service-text">We Buy Gold</div>
-                    </div>
+            <!-- Custom Jewelry -->
+            <div class="service-item">
+                <div class="service-content">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDYQY_huUzbOK5ugCB0lwagXYzkhSFBolz4v3k1QKcGYIM8ZkvL044w-mskuoAqc2zuz8&usqp=CAU" alt="Custom Jewelry" class="service-icon">
+                    <div class="service-text">We Make Custom Jewelry</div>
+                </div>
+            </div>
+
+            <!-- Buy Gold -->
+            <div class="service-item">
+                <div class="service-content">
+                    <img src="https://img.icons8.com/color/96/gold-bars.png" alt="Buy Gold" class="service-icon">
+                    <div class="service-text">We Buy Gold</div>
                 </div>
             </div>
         </div>
