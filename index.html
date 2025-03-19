@@ -8,14 +8,12 @@
     <style>
         body {
             font-family: 'Poppins', sans-serif;
-            background-image: url('https://images.unsplash.com/photo-1595341888016-a392ef81b7de?auto=format&fit=crop&w=1350&q=80');
+            background-image: url('https://images.unsplash.com/photo-1603808033192-082d6919d486?auto=format&fit=crop&w=1470&q=80');
             background-size: cover;
-            background-attachment: fixed;
             background-position: center;
             color: #333;
             margin: 0;
             padding: 0;
-            text-align: center;
         }
 
         header {
@@ -26,10 +24,11 @@
             font-weight: bold;
             letter-spacing: 2px;
             text-shadow: 2px 2px #555;
+            text-align: center;
         }
 
         .container {
-            max-width: 950px;
+            max-width: 90%;
             margin: 30px auto;
             padding: 20px;
             background-color: rgba(255, 255, 255, 0.95);
@@ -60,6 +59,7 @@
             height: 50px;
             margin-right: 18px;
             border-radius: 8px;
+            object-fit: contain;
         }
 
         .link-box a {
@@ -70,6 +70,24 @@
             flex-grow: 1;
         }
 
+        .services {
+            display: flex;
+            justify-content: space-between;
+            background-color: rgba(255, 248, 220, 0.9);
+            border: 2px solid #d4af37;
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 30px;
+            font-size: 22px;
+            color: #b8860b;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .services div {
+            width: 48%;
+        }
+
         footer {
             background: linear-gradient(90deg, #b8860b, #d4af37);
             color: white;
@@ -78,6 +96,19 @@
             margin-top: 50px;
             border-top-left-radius: 15px;
             border-top-right-radius: 15px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .services {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .services div {
+                width: 100%;
+                margin-bottom: 20px;
+            }
         }
     </style>
 </head>
@@ -104,13 +135,18 @@
         </div>
 
         <div class="link-box">
-            <img src="https://cdn.glitch.global/25220d6a-14c9-4e84-8161-54bafc42c273/offerup.png?v=1710809682933" alt="OfferUp">
+            <img src="https://seeklogo.com/images/O/offerup-logo-4A3D1A838B-seeklogo.com.png" alt="OfferUp">
             <a href="https://offerup.co/kUbdbnT2eQb" target="_blank">OfferUp</a>
         </div>
 
         <div class="link-box">
             <img src="https://img.icons8.com/color/48/google-logo.png" alt="Google Reviews">
             <a href="https://www.google.com/search?q=Gold+And+Diamond+USA+Reviews" target="_blank">Google Reviews</a>
+        </div>
+
+        <div class="services">
+            <div>✅ We repair all Jewelry & Phones</div>
+            <div>✅ We Buy Gold for Best Price</div>
         </div>
 
     </div>
